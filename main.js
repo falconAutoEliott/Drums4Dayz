@@ -64,14 +64,14 @@ const sounds = {
   81: {
     char: 'Q',
 /*    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord1.wav'), */
-audio: new Audio('sideburnz_1-a_a.wav'),
+audio: new Audio('Test-LocalAudio/sideburnz_1-a_a.wav'),
     vol: 0.7,
     name: 'SideBurnz'
   },
   87: {
     char: 'W',
 /*    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord2.wav'), */
-    audio: new Audio('sideburnz_1-a_b.wav'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
     name: 'SideBurnz'
   },
