@@ -1,5 +1,6 @@
 /* J-Roc Baby */
-var ctlrName = "Touch any key on your controller"
+var ctlrName = "Touch any key on your controller";
+var navigator = require('web-midi-api');
 
 navigator.requestMIDIAccess()
     .then(onMIDISuccess, onMIDIFailure);
