@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/falconAutoEliott/Drums4Dayz/issues"
   },
-  "homepage": "https://github.com/falconAutoEliott/Drums4Dayz#readme"
+  "homepage": "https://github.com/falconAutoEliott/Drums4Dayz#readme",
+  "dependencies": {
+    "jzz": "^1.3.3"
+  }
 }
