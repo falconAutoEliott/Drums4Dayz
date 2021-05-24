@@ -9,8 +9,8 @@ app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/index.html'));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
 
 
 
-console.log("Running at Port 3000");
+console.log("Great Success!");
