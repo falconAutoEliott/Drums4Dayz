@@ -26,15 +26,6 @@ function onMIDIFailure() {
     console.log('Could not access your MIDI devices.');
 }
 
-
-
-function getMIDIMessage(midiMessage) {
-  console.log(midiMessage.data[1]);
-  console.log(midiMessage.currentTarget.name);
-  ctlrName = midiMessage.currentTarget.name
-  display.innerText = ctlrName;
-}
-
 //function mapController(){
 //
 //}
@@ -43,6 +34,12 @@ const pads = document.querySelectorAll('.pad')
 const buttons = document.querySelectorAll('.button')
 const display = document.getElementById('display')
 const sounds = {
+  12: {
+    char: 'A',
+    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV'),
+    vol: 1,
+    name: 'KICK 1'
+  },
   65: {
     char: 'A',
     audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV'),
@@ -154,6 +151,13 @@ function playSound(code) {
   sound.volume = sounds[code].vol;
   sound.currentTime = 0;
   display.innerText = text;
+}
+
+function getMIDIMessage(midiMessage) {
+  console.log(midiMessage.data[1]);
+  ctlrName = midiMessage.currentTarget.name
+  display.innerText = ctlrName;
+  playSound(midiMessage.data[1]);
 }
 
 // Trigger sounds on key press
