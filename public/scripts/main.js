@@ -155,9 +155,10 @@ function playSound(code) {
 
 function getMIDIMessage(midiMessage) {
   console.log(midiMessage.data[1]);
+  let code = midiMessage.data[1]; 
   ctlrName = midiMessage.currentTarget.name
   display.innerText = ctlrName;
-  playSound(midiMessage.data[1]);
+  playSound(code);
 }
 
 // Trigger sounds on key press
