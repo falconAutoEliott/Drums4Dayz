@@ -44,99 +44,97 @@ const sounds = {
     char: 'A',
     audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV'),
     vol: 1,
-    name: 'KICK 1'
+    name: 'KICK'
   },
   83: {
     char: 'S',
     audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/Snare%207Mile%201.wav'),
     vol: 1,
-    name: 'KICK 2'
+    name: 'SNARE'
   },
   68: {
     char: 'D',
     audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/OpenHH.wav'),
     vol: 0.6,
-    name: 'SNARE 1'
+    name: 'HH-O'
   },
   70: {
     char: 'F',
     audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/ClosedHH%207Mile.wav'),
     vol: 1,
-    name: 'SNARE 2'
+    name: 'HH-C'
   },
   81: {
     char: 'Q',
-/*    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord1.wav'), */
 audio: new Audio('Test-LocalAudio/sideburnz_1-a_a.wav'),
     vol: 0.7,
     name: 'SideBurnz'
   },
   87: {
     char: 'W',
-/*    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/chord2.wav'), */
     audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
     name: 'SideBurnz'
   },
   69: {
     char: 'E',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/hat10.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'HAT 1'
+    name: 'Empty'
   },
   82: {
     char: 'R',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/hat7.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 0.5,
-    name: 'HAT 2'
+    name: 'Empty'
   },
   72: {
     char: 'H',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/pop1.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'PERC 1'
+    name: 'Empty'
   },
   74: {
     char: 'J',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/synth3.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'SYNTH'
+    name: 'Empty'
   },
   75: {
     char: 'K',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/strings2.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'STRINGS 1'
+    name: 'Empty'
   },
   76: {
     char: 'L',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/strings22.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'STRINGS 2'
+    name: 'Empty'
   },
   85: {
     char: 'U',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/wood1.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'PERC 2'
+    name: 'Empty'
   },
   73: {
     char: 'I',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/harp1.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'HARP 1'
+    name: 'Empty'
   },
   79: {
     char: 'O',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/harp2.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'HARP 2'
+    name: 'Empty'
   },
   80: {
     char: 'P',
-    audio: new Audio('https://mpc2000.nyc3.digitaloceanspaces.com/harp3.mp3'),
+    audio: new Audio('Test-LocalAudio/sideburnz_1-a_b.wav'),
     vol: 1,
-    name: 'HARP 3'
+    name: 'Empty'
   }
 }
 
