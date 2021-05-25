@@ -1,9 +1,9 @@
 /* J-Roc Baby */
 var ctlrName = "Touch any key on your controller";
 
-var navigator = require('jzz');
+import { requestMIDIAccess } from 'jzz';
 
-navigator.requestMIDIAccess()
+requestMIDIAccess()
     .then(onMIDISuccess, onMIDIFailure);
 
 function onMIDISuccess(midiAccess) {
