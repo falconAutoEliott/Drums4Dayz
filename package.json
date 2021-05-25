@@ -2,7 +2,7 @@
   "name": "drums4dayz",
   "version": "1.0.0",
   "description": "Free music-making tool",
-  "main": "public/scripts/main.js",
+  "main": "public/scripts/mainwrp.js",
   "type": "commonjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
