@@ -150,7 +150,7 @@ function playSound(code) {
   sound.play();
   sound.volume = sounds[code].vol;
   sound.currentTime = 0;
-  display.innerText = text;
+  display.innerText = display.innerText + "\n" + text;
 }
 
 function getMIDIMessage(midiMessage) {
