@@ -26,25 +26,25 @@ function onMIDIFailure() {
     console.log('Could not access your MIDI devices.');
 }
 
-JZZ().or('Cannot start MIDI engine!')
+navigator().or('Cannot start MIDI engine!')
      .openMidiOut().or('Cannot open MIDI Out port!')
      .wait(500).send([0x90,60,127]) // note on
      .wait(500).send([0x80,60,0]);  // note off
-JZZ().openMidiIn().or('Cannot open MIDI In port!')
+navigator().openMidiIn().or('Cannot open MIDI In port!')
      .and(function() { console.log('MIDI-In: ', this.name()); })
      .connect(function(msg) { console.log(msg.toString()); })
      .wait(10000).close();
 
-function getMIDIMessage(midiMessage) {
-  console.log(midiMessage.data[1]);
-  console.log(midiMessage.currentTarget.name);
-  ctlrName = midiMessage.currentTarget.name
-  display.innerText = ctlrName;
-}
+//function getMIDIMessage(midiMessage) {
+ // console.log(midiMessage.data[1]);
+ // console.log(midiMessage.currentTarget.name);
+ // ctlrName = midiMessage.currentTarget.name
+ // display.innerText = ctlrName;
+//}
 
-function mapController(){
-
-}
+//function mapController(){
+//
+//}
 
 const pads = document.querySelectorAll('.pad')
 const buttons = document.querySelectorAll('.button')
