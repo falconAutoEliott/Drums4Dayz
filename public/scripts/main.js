@@ -1,4 +1,3 @@
-/* J-Roc Baby */
 var ctlrName = "Touch any key on your controller";
 
 //var navigator = require('jzz');
