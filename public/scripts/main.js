@@ -28,12 +28,12 @@ function onMIDIFailure() {
 
 
 
-//function getMIDIMessage(midiMessage) {
- // console.log(midiMessage.data[1]);
- // console.log(midiMessage.currentTarget.name);
- // ctlrName = midiMessage.currentTarget.name
- // display.innerText = ctlrName;
-//}
+function getMIDIMessage(midiMessage) {
+  console.log(midiMessage.data[1]);
+  console.log(midiMessage.currentTarget.name);
+  ctlrName = midiMessage.currentTarget.name
+  display.innerText = ctlrName;
+}
 
 //function mapController(){
 //
