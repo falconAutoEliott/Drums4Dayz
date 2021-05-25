@@ -1,7 +1,12 @@
 /* J-Roc Baby */
 var ctlrName = "Touch any key on your controller";
 
-var navigator = require('jzz');
+//var navigator = require('jzz');
+var navigator = 'jzz';
+require([navigator], function(result){
+    navigator = result;
+});
+
 
 navigator.requestMIDIAccess()
     .then(onMIDISuccess, onMIDIFailure);
