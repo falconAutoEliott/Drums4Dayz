@@ -145,7 +145,7 @@ display.innerText = ctlrName;
 function playSound(code) {
   const sound = sounds[code].audio;
   const text = sounds[code].name;
-  sound.play();
+  sound.play(code);
   sound.volume = sounds[code].vol;
   sound.currentTime = 0;
   display.innerText = display.innerText + "\n" + text;
