@@ -148,13 +148,14 @@ function playSound(code) {
   sound.play();
   sound.volume = sounds[code].vol;
   sound.currentTime = 0;
-  display.innerText = "\n" + text;
+  display.innerText = display.innerText + "\n" + text;
 }
 
 function getMIDIMessage(midiMessage) {
   console.log(midiMessage.data[1]);
   let code = midiMessage.data[1]; 
   ctlrName = midiMessage.currentTarget.name
+  display.innerText = "";
   display.innerText = ctlrName;
   playSound(code);
 }
@@ -170,6 +171,7 @@ function keyPress(e) {
     return
   }
   key.classList.add('pressed');
+  display.innerText = "";
   display.innerText = "Keyboard: ";
   playSound(code);
 }
@@ -183,6 +185,7 @@ function padClick(e) {
   if (e.target.className === 'pad') {
     let code = e.target.dataset.key;
     e.target.classList.add('pressed');
+    display.innerText = "";
     display.innerText = "Mouse: ";
     playSound(code);
   }
