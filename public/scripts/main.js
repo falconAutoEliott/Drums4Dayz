@@ -148,7 +148,7 @@ function playSound(code) {
   sound.play();
   sound.volume = sounds[code].vol;
   sound.currentTime = 0;
-  display.innerText = display.innerText + "\n" + text;
+  display.innerText = "\n" + text;
 }
 
 function getMIDIMessage(midiMessage) {
@@ -170,6 +170,7 @@ function keyPress(e) {
     return
   }
   key.classList.add('pressed');
+  display.innerText = "Keyboard: ";
   playSound(code);
 }
 
@@ -182,6 +183,7 @@ function padClick(e) {
   if (e.target.className === 'pad') {
     let code = e.target.dataset.key;
     e.target.classList.add('pressed');
+    display.innerText = "Mouse: ";
     playSound(code);
   }
 }
