@@ -90,7 +90,7 @@ audio: new Audio('Test-LocalAudio/sideburnz_1-a_a.wav'),
   },
   72: {
     char: 'H',
-    audio: new Audio('gs://plethora-drums-db.appspot.com/sideburnz_1-a_a.wav'),
+    audio: new Audio('gs://plethora-drums-db.appspot.com/SAMPLE/sideburnz_1-a_a.wav'),
     vol: 1,
     name: 'Empty'
   },
