@@ -36,7 +36,7 @@ const display = document.getElementById('display')
 const sounds = {
   12: {
     char: 'A',
-    audio: new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV'),
+    audio: new Audio(""),//new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/377560/kick.WAV'),
     vol: 1,
     name: 'KICK 1'
   },
